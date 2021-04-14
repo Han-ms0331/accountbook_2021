@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .input{
+                display:flex;
+            }
+            .book ,.item ,.receipt{
+                margin: 0px 80px;
+            }
+            input{
+                margin: 5px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class='input'>
+                <div class='book'>
+                    <h2>가계부 정보</h2>
+                    <div class='book_panel_id'>
+                        <input type='text' placeholder="패널ID" />
+                    </div>
+                    <div class='book_book_month'>
+                        <input type='text' placeholder="가계부월" />
+                    </div>
+                    <div class='book_panel_name'>
+                        <input type='text' placeholder="패널명" />
+                    </div>
+                    <div class='book_panel_code'>
+                        <input type='text' placeholder="패널코드" />
+                    </div>
+                </div>
+                <div class='recipt'>
+                    <h2>영수증 정보</h2>
+                    <div class='recipt_purchase_type'>
+                        <input type='radio' name='purchase_type' id='shop' checked />
+                        <label for="shop">농식품 구입</label>
+                        <input type='radio' name='purchase_type' id='eatery'/>
+                        <label for="eatery">외식</label>
+                    </div>
+                    <div class='recipt_shop_type'>
+                        <input type="text" placeholder="구매처유형" />
+                    </div>
+                    <div class='recipt_shop_name'>
+                        <input type="text" placeholder="구매처" />
+                    </div>
+                    <div class='recipt_shop_region'>
+                        <input type="text" placeholder="구매지역" />
+                    </div>
+                    <div class='recipt_recipt'>
+                        <input type='radio' name='recipt' id='yes' checked />
+                        <label name='recipt' for="yes">유</label>
+                        <input type='radio' name='recipt' id='no'/>
+                        <label name='recipt' for="no">무</label>
+                    </div>
+                    <div class='recipt_purchase_date'>
+                        <input type="date" placeholder="구매날짜" />
+                    </div>
+                    <div class='recipt_purchase_day'>
+                        <input type='text' placeholder="구매요일" />
+                    </div>
+                    <div class='recipt_purchase_time'>
+                        <input type="number" placeholder="구매시간" />
+                        <span>시</span>                    
+                    </div>
+                    <div class='recipt_take_out'>
+                        <input type="checkbox" id='take_out' />
+                        <label for='take_out'>take out</label>
+                    </div>
+                    <div class='recipt_payment_type'>
+                        <input type="text" placeholder="결제방법" />
+                    </div>
+                    <div class='recipt_transportation_go'>
+                        <input type="text" placeholder="갈 때" />
+                    </div>
+                    <div class='recipt_transportation_come'>
+                        <input type="text" placeholder="올 때" />
+                    </div>
+                    <div class='recipt_dutchpay'>
+                        <input type="checkbox" id='dutchpay' />
+                        <label for='dutchpay'>dutch pay</label>
+                    </div>
+                    <div class='recipt_dutchpay_member'>
+                        <input type="number" placeholder="인원" />
+                    </div>
+                    <div class='recipt_dutchpay_total'>
+                        <input type="number" placeholder="총 금액" />
+                    </div>
+                    <div class='recipt_notice_1'>
+                        <p>영수증 특이사항</p>
+                        <textarea name='notice_1'></textarea>
+                    </div>
+                </div>
+                <div class='item'>
+                    <h2>상품정보</h2>
+                    <div class='item_item_name'>
+                        <input type='text' placeholder="상품명" />
+                    </div>
+                    <div class='item_item_origin'>
+                        <input type='text' placeholder="원산지" />
+                    </div>
+                    <div class='item_quantity'>
+                        <input type='text' placeholder="수량" />
+                    </div>
+                    <div class='item_quantity_unit'>
+                        <input type='text' placeholder="수량단위" />
+                    </div>
+                    <div class='item_weight_total'>
+                        <input type='text' placeholder="1수량당중량" />
+                    </div>
+                    <div class='item_weight_total_unit'>
+                        <input type='text' placeholder="1수량당중량단위" />
+                    </div>
+                    <div class='item_multi_quantity'>
+                        <input type='text' placeholder="멀티수량" />
+                    </div>
+                    <div class='item_multi_quantity_unit'>
+                        <input type='text' placeholder="멀티수량단위" />
+                    </div>
+                    <div class='item_weight_item'>
+                        <input type='text' placeholder="멀티수량당중량" />
+                    </div>
+                    <div class='item_weight_item_unit'>
+                        <input type='text' placeholder="멀티수량당중량단위" />
+                    </div>
+                    <div class='item_unit_price'>
+                        <input type='number' placeholder="단가" />
+                    </div>
+                    <div class='item_price'>
+                        <input type='number' placeholder="구입액" />
+                    </div>
+                    <div class='item_discount'>
+                        <input type='number' placeholder="할인액" />
+                    </div>
+                    <div class='item_notice2'>
+                        <p>상품 특이사항</p>
+                        <textarea name='notice_2'></textarea>
+                    </div>
+                </div>
+            </div>
+            <input type='submit' value="입력완료" />
+        </form>
+    </body>
+</html>
